@@ -7,6 +7,8 @@ Files and data to accompany "Fitness effects of CRISPR endonucleases in *Drosoph
 
 **AML-ML-v10.R**: R-code of previously developed maximum likelihood framework (*https://doi.org/10.1534/genetics.118.301893*) modified to model two unlinked autosomal loci, representing the construct and a single idealized off-target site. 
 
+**gene_drive_off_target_effects.slim**: Agent-based simulation framework implemented in SLiM3 to study the consequences of off-target fitness costs on the invasion potential of homing and suppression gene drives. 
+
 **constructs.zip**: annotated sequences of the final construct insertions in ApE format (*http://biologylabs.utah.edu/jorgensen/wayned/ape*).
 
 **data/**: Data used by AML-ML-v10.R. FitnessModes.txt contains the tested models encoded as integer vectors; rawData/ contains the raw genotype counts of our *D. melanogaster* cage populations (can also be found in Supplemental_Data_Sets.xlsx); TransitionMatrix.txt contains expected offspring counts for each genotype combination.
