@@ -6,7 +6,7 @@
 
 rm(list=ls())
 options(stringsAsFactors = F)
-my_wd<-"phenotype_assays/"
+my_wd<-"../../MS/Supplemental_Data/phenotype_assays/"
 setwd(my_wd)
 
 #Packages------
@@ -114,7 +114,7 @@ t.test(via$r,mu=0.5,alternative = "two.sided") #ns
 
 g<-ggplot(data=via,aes(x=r))+geom_histogram(bins = 15,color="black",fill="grey50")
 g<-g+theme_classic()+coord_cartesian(xlim = c(0,1),ylim = c(0,15))
-g<-g+ylab("Number of crosses")+scale_x_continuous("Relative heterozygote viability",breaks = c(0,0.25,0.5,0.75,1))
+g<-g+ylab("Number of crosses")+scale_x_continuous("Fraction of heterozygous offspring",breaks = c(0,0.25,0.5,0.75,1))
 g<-g+geom_vline(xintercept = 0.5,color="black",linetype="dashed")
 g<-g+geom_vline(xintercept = mean(via$r),color="black",linetype="solid")
 g<-g+annotate(geom="text",x=1.75/2,y=15,label="P = 0.295",size=4,fontface="italic")
@@ -124,4 +124,4 @@ gvia<-g
 
 g<-plot_grid(plotlist = list(gmate,gfec,gvia),nrow = 1,ncol = 3,labels = LETTERS[1:3])
 g
-ggsave("Phenotypes.png",plot = g,width = 10,height = 5,units = "in",dpi = 600)
+ggsave("Phenotypes.png",plot = g,width = 11,height = 5,units = "in",dpi = 600)
