@@ -1,5 +1,6 @@
 # CRISPR-Cas9-fitness-effects
-Files and data to accompany "Fitness effects of CRISPR endonucleases in *Drosophila melanogaster* populations"
+Files and data to accompany "Fitness effects of CRISPR endonucleases in *Drosophila melanogaster* populations" published in eLife:
+CITE AS: eLife2022;11:e71809 DOI: https://doi.org/10.7554/eLife.71809
 
 **AML-ML-04092020-emp-v10.R**: R-code to quantify the fitness costs of the four different transgenetic constructs from the observed frequency trajectories in our *D. melanogaster* cage populations. Uses functions implemented in AML-ML-v10.R.
 
